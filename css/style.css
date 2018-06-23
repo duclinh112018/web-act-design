@@ -1,0 +1,1478 @@
+
+body {
+    font-family: 'Open Sans', 'Roboto' , Nato Sans, sans-serif;
+    font-size: 14px;
+    line-height: 2em;
+}
+html, body {
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border:none;
+    outline: 0;
+}
+
+ul , li {
+    margin: 0;
+}
+
+
+
+.clear-float:after{
+    content: '';
+    clear: both;
+    display: inline-block;
+}
+
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    min-width: 500px;
+}
+/***********************************************************************************/
+/*																				   */
+/*						////			START HEADER		  \\\\	               */
+/*                                                                                 */
+/***********************************************************************************/
+.header {
+    position: relative;
+    z-index: 999;
+    border-top: 5px solid #a9a9a92e;
+    background: linear-gradient(to bottom, #f6f6f6 0%,#ffffff 100%);
+    min-height: 60px;
+    padding: 8px 0;
+}
+
+div.container {
+    position: relative;
+    max-width: 1170px;
+}
+
+
+
+/*START LOGO DESIGN*/
+
+.header > div.container > .logo {
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 30px;
+    display: block;
+}
+
+.header > div.container > .logo img {
+    max-width: 200px;
+    transition: all .4s ease;
+}
+
+/*END LOGO DESIGN*/
+
+
+
+
+
+
+/*START MENU DESIGN*/
+
+/*start menubar-design*/
+
+.header > div.container > .main-menu {
+    position: static;
+    width: 70%;
+    padding-left: 85px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main-menu .menu-bar {
+    margin:0 5px;
+    padding:0 10px;
+}
+
+.main-menu .menu {
+    margin-top: 55px;
+}
+
+
+.main-menu .menu > li {
+    list-style: none;
+    float: left;
+    padding-bottom: 18px;
+}
+
+.main-menu .menu > li:first-child > a {
+    color: white;
+    background-color: #0088cc;
+    border-radius: 4px;
+}
+
+.menu > li:nth-child(3) > a .fa {
+    display: inline;
+}
+
+.main-menu .menu  > li > a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    color: #0088cc;
+    font-weight: 700;
+}
+
+.main-menu .menu > li > a:hover {
+    color: white;
+    background-color: #0088cc;
+    border-radius: 4px;
+}
+
+div.icon {
+    position: absolute;
+    top: 54px;
+    right: 0;
+}
+
+div.icon .ul-icon li {
+    list-style-type: none;
+    float: left;
+}
+
+/*end menubar-design*/
+
+
+
+/*start menubar-sticky-design*/
+.header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #38353563;
+    transition: all .4s ease;
+    border-top: none;
+}
+
+.header.sticky > div.container {
+    transition: all .4s ease;
+}
+
+
+.header.sticky > div.container > .logo {
+    padding-top: 10px;
+}
+
+.header.sticky > div.container > .logo img {
+    max-width: 150px;
+    transition: all .4s ease;
+}
+
+.header.sticky .search-box {
+    display: none;
+}
+
+.header.sticky .main-menu .menu-bar .menu {
+    margin-top: 17px;
+}
+
+.header.sticky div.icon {
+    top: 15px;
+}
+
+.header.sticky .main-menu .menu > li {
+    padding-bottom: 12px;
+}
+
+/*end menubar-sticky-design*/
+
+
+
+
+
+/*start icon-menu-design*/
+.ul-icon li a {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+    background: white;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border-bottom: 2px solid #00000026;
+    z-index: 1;
+}
+
+.ul-icon li a .fa {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+
+.ul-icon li a:hover .fa {
+    color: white;
+    transform: rotateY(360deg);
+}
+
+.ul-icon li a:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;	
+    left: 0;
+    transition: .3s;
+    z-index: 2;
+}
+
+.ul-icon li a:hover:before {
+    top:0;
+}
+
+.ul-icon li:nth-child(1) a:before {
+    background: #3b5999;
+}
+
+.ul-icon li:nth-child(2) a:before {
+    background: #dd4b39;
+}
+
+.ul-icon li:nth-child(3) a:before {
+    background: #09b83e;
+}
+/*end icon-menu-design*/
+
+
+
+/*start-search_box-design*/
+
+.search-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+}
+
+input[type=search] {
+    background-image: url(C:/Users/ducer/Desktop/ACT_ACADEMY/images/search.png);
+    background-repeat: no-repeat;
+    background-position: 4px 5px;
+    padding: 3px 0px 3px 23px;
+    border-radius: 25px;
+    border: 1px solid #0b3ffb36;
+    font-size: 13px;
+    width: 145px;
+    height: 31px;
+    outline: none;
+    -webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    -ms-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=search]:focus {
+    width: 220px;
+}
+
+/*end search-box-design*/
+
+
+/*Start Menu-đa cấp*/
+
+
+.menu > li:nth-child(3):hover > a{
+    background: #0088cc;
+    color: white;
+    border-radius: 4px;
+}
+.menu > li:nth-child(3) > ul {
+    display: none;
+}
+.menu > li:nth-child(3):hover ul {
+    display: block;
+}
+.menu-drop {
+    position: absolute;
+    top: 89%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    min-width: 10rem;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin: .125rem 0 0;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 5px solid #0088cc;
+    border-left: 1px solid #dad4d4;
+    border-right: 1px solid #dad4d4;
+    border-bottom: 1px solid #dad4d4;
+    border-radius: 10px;
+}
+div.co-1 {
+    width: 25%;
+    float: left;
+    height: 100%;
+}
+
+.menu-col {
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 0px;
+    height: 100%;
+}
+
+.menu-col a {
+    text-decoration: none;
+}
+
+.sub-menu {
+    padding: 0 45px;
+}
+
+.sub-menu > li {
+    list-style: none;
+}
+
+.sub-menu li ul li {
+    list-style: outside;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+
+.sub-menu li ul li a {
+    font-size: 12px;
+    color: #777;
+    display: block;
+}
+
+.sub-menu li ul li a:hover {
+    background: #e9e9e9e3;
+    border-radius: 4px;
+}
+
+.dao-tao {
+    font-size: 13px;
+    font-weight: 600;
+    list-style: none;
+    color: #676464e6;
+    display: block;
+}
+
+.dao-tao:hover {
+    background: #e9e9e9e3;
+    border-radius: 4px;
+}
+
+/*End Menu-đa cấp*/
+
+/***********************************************************************************/
+/*																				   */
+/*						////			END HEADER		  \\\\	               */
+/*                                                                                 */
+/***********************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************************/
+/*																				   */
+/*						////			START CONTENT		  \\\\	               */
+/*                                                                                 */
+/***********************************************************************************/
+
+
+.content-main {
+    width: 100%;
+}
+
+
+/*start carousel*/
+.carousel img {
+    width: 100%;
+}
+/*end-carousel*/
+
+
+/*Start Support Menu*/
+.support-menu {
+    position: fixed;
+    top:200px;
+    right: 0;
+    z-index: 100000;
+}
+
+.row-support-menu {
+    border-right: 5px solid #d7d7e5c7;
+}
+
+.row-support-menu li:nth-child(1) {
+    border-top-left-radius: 8px;
+}
+.row-support-menu li:nth-child(3) {
+    border-bottom-left-radius: 8px;
+}
+
+.support-menu .row-support-menu > li {
+    list-style: none;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 3px;
+    border:2px solid #ffffffdb;
+    padding-top: 5px;
+}
+
+
+/*End Support Menu*/
+
+/*Start facebook-page*/
+.fb-page {
+    display: inline-block;
+    width: 310px;
+    height: 28px;
+    background: #2b8afff2;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    z-index: 1000000;
+    text-align: center;
+
+}
+/*End facebook-page*/
+
+/*Start slider-intro*/
+
+.slider-intro {
+    width: 100%;
+    background: #444444;
+    color: white;
+}
+
+.cung-cap-khoa-hoc {
+    width: 70%;
+    float: left;
+    padding: 10px 0 0;
+    text-align: center;
+    border-top: 1px solid white;
+    border-radius: 1px;
+}
+
+.dang-ki {
+    text-align: center;
+    transform: translate(0%, 75%);
+}
+
+.dang-ki button {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.cung-cap-khoa-hoc p:nth-child(1) {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+
+.cung-cap-khoa-hoc p:nth-child(2), 
+.cung-cap-khoa-hoc p:nth-child(3) {
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+}
+
+.cung-cap-khoa-hoc p:nth-child(1) span {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffb30a;
+}
+
+.dang-ki {
+    width: 30%;
+    float: left;
+}
+/*End slider-intro*/
+
+
+
+/*Start Home intro*/
+
+
+.home-intro {
+    padding-top: 45px;
+    padding-bottom: 65px;
+    background: white;
+}
+
+
+
+.v-sticker {
+    overflow: hidden;
+    position: relative;
+    margin: 5px 0;
+}
+
+
+
+.v-sticker ul{
+    top: 0px;
+    list-style: none;
+}
+
+
+
+.v-sticker ul li{
+    position: relative;
+    margin: 0px; 
+    padding: 15px 30px 15px 30px; 
+    height: 60px;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 1.8em;
+    background: #007abf;
+    color: white;
+    text-align: center;
+    border-bottom-right-radius: 23px;
+    border-top-left-radius: 23px;
+}
+
+.home-intro .question {
+    position: relative;
+}
+
+.home-intro .question img {
+    position: absolute;
+    top: -60px;
+    right: 30px;
+    max-width: 36%;
+}
+.home-intro span {
+    padding: 0;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 88px;
+    color: black;
+    position: relative;
+}
+
+.home-intro #sp-1 {
+    padding-left: 55px;
+}
+
+.home-intro #sp-1:before {
+    content: "";
+    width: 15px;
+    height: 35px;
+    background: black;
+    position: absolute;
+    top: 16px;
+    left: 4px;
+    transform: skew(-32deg);
+    -webkit-transform: skew(-32deg);
+    -moz-transform: skew(-32deg);
+    -o-transform: skew(-32deg);
+    -ms-transform: skew(-32deg);
+}
+
+.home-intro #sp-1:after {
+    content: "";
+    width: 15px;
+    height: 35px;
+    background: orange;
+    position: absolute;
+    top: 16px;
+    left: 25px;
+    transform: skew(-32deg);
+    -webkit-transform: skew(-32deg);
+    -moz-transform: skew(-32deg);
+    -o-transform: skew(-32deg);
+    -ms-transform: skew(-32deg);
+}
+
+.home-intro span a {
+    text-decoration: none;
+    color: #007abf;
+}
+
+.home-intro span a:hover {
+    color: #ffb30a;
+}
+
+.home-intro > .container > p {
+    margin: 0 0 5px;
+    font-size: 1.6em;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.6em;
+    color: #777;
+}
+
+.home-intro p b {
+    color: #007abf;
+}
+
+.thong-tin {
+    padding: 30px 0 0 0;
+    margin-top: 21px;
+    box-shadow: -3px 1px 27px 2px #3690ff5e;
+    border-radius: 10px;
+}
+
+
+.thong-tin .anh-daotao{
+    margin-bottom: 35px;
+    padding-left: 30px;
+}
+
+.thong-tin .anh-daotao > p {
+    font-family: 'Roboto Condensed';
+    margin-left: 60px;
+    margin-bottom: 0px;
+    color: #625656a6;
+    font-size: 15px;
+}
+
+.thong-tin .anh-daotao a {
+    text-decoration: none;
+    font-size: 1.4em;
+    margin-left: 10px;
+}
+
+.thong-tin .anh-daotao a:nth-child(1) {
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    background: #08B;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.thong-tin .anh-daotao a:nth-child(1):hover .fa{
+    transform: rotateY(360deg);
+}
+
+
+.thong-tin .anh-daotao .fa {
+    font-size: 14px;
+    color: white;
+    transition: .5s;
+}
+/*End Home intro*/
+
+/*Start course*/
+
+.course {
+    position: relative;
+    width: 100%;
+    background: #053636;
+}
+
+.cheo-bg {
+    position: absolute;
+    left: 90px;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    background-color: #053636;
+    transform: skewX(-14deg);
+    -webkit-transform: skewX(-14deg);
+    -o-transform: skew(-14deg);
+    -ms-transform: skew(-14deg);
+    -moz-transform: skew(-14deg);
+
+}
+
+.auto-container {
+    position: relative;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+
+.anh-bg {
+    background-image: url(../images/tc.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 65%;
+    background-size: cover;
+    z-index: 1;
+}
+
+.content-act {
+    color: white;
+}
+
+.content-act h2 {
+    position: relative;
+    font-size: 30px;
+    padding: 50px 0 100px;
+    font-weight: bold;
+}
+
+.content-act h2:before {
+    content: "-";
+    position: absolute;
+    display: inline-block;
+    font-size: 90px;
+    bottom: 15px;
+    left: 32%;
+}
+
+.content-act .list-block {
+    position: relative;
+    padding-left: 70px;
+}
+
+.content-act .list-block:hover .numbers-item {
+    color: #fbca00;
+}
+
+.content-act .list-block h4{
+    position: relative;
+    font-size: 21px;
+    font-weight: 600;
+    color: white;
+}
+
+.numbers-item {
+    font-family: serif;
+    position: absolute;
+    color: #454545;
+    font-size: 120px;
+    font-weight: 800;
+    font-style: italic;
+    top: 22px;
+    left: -40px;
+}
+
+.content-act .list-block p {
+    font-family: 'Roboto Condensed';
+    font-size: 15px;
+    font-weight: 100;
+    color: #777777a6;
+    line-height: 25px;
+    margin-bottom: 60px;
+}
+
+/*End Course*/
+
+/*Start center-programming*/
+
+
+.conntent-course{
+    background: white;
+}
+
+
+.programming1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.programming1 > h2 {
+    text-align: center;
+    color: black;
+    padding: 30px 0 25px 0;
+    margin: 35px 0;
+    border-radius: 5px;
+    font-size: 45px;
+    font-weight: 100;
+    box-shadow: 0px 11px 12px 5px #3690ff26;
+    cursor: pointer;
+}
+
+.programming1 > h2:hover {
+    box-shadow: 0px 11px 12px 11px #3690ff26;
+    transition: all .2s ease;
+}
+
+.programming1 > p {
+    font-size: 1.6em;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.6em;
+    color: #777;
+}
+
+.programming1 > h2 > b {
+    color: #007abf;
+}
+
+
+.programming1 > img {
+    max-width: 100%;
+}
+
+/*End center-programming*/
+
+
+/*BẮT ĐẦU CÁC KHÓA HỌC*/
+
+.cac-khoa-hoc {
+    font-family: 'Oswald';
+    background: linear-gradient(to top, #e1e1e1, white);
+}
+
+.cac-khoa-hoc .list-khoahoc {
+    border-bottom: 1px solid #3333331f;
+}
+
+
+.khoahoc {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 60px;
+    background-color: white;
+    box-shadow: 0px 6px 13px 9px #3690ff26;
+}
+
+
+.khoahoc p:nth-child(1) {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    color: #0088cc;
+    box-shadow: 1px 5px 20px 6px #3690ff26;
+    padding: 15px 30px 15px 70px;
+    border-radius: 8px;
+    background: linear-gradient(to top, #e1e1e1, white);
+}
+
+.khoahoc p:nth-child(1):before {
+    content: "";
+    position: absolute;
+    background: black;
+    top: 4px;
+    left: 28px;
+    width: 29px;
+    height: 30px;
+    transform: skew(-32deg);
+    -o-transform : skew(-32deg);
+    -moz-transform : skew(-32deg);
+    -webkit-transform : skew(-32deg);
+    -ms-transform : skew(-32deg);
+}
+.khoahoc p:nth-child(1):after {
+    content: "";
+    position: absolute;
+    background: orange;
+    top: 15px;
+    left: 12px;
+    width: 35px;
+    height: 30px;
+    transform: skew(-142deg);
+    -o-transform : skew(-142deg);
+    -moz-transform : skew(-142deg);
+    -webkit-transform : skew(-142deg);
+    -ms-transform : skew(-142deg);
+}
+
+.khoahoc p:nth-child(2) {
+    font-family: 'Roboto Condensed';
+    margin: 10px 0;
+    font-weight: 600;
+    color: #000000d4;
+}
+
+
+.bar {
+    width: 12%;
+    height: 2px;
+    margin: 0 auto 20px;
+}
+
+.slider-slick1,
+.slider-slick2, 
+.slider-slick3  {
+    width: 100%;
+    margin: auto;
+}
+
+.slider-slick1 .item, 
+.slider-slick2 .item, 
+.slider-slick3 .item {
+    text-align: center;
+    height: 273px;
+    color: #fff;
+    margin: 0 10px;
+    border-radius: 13px;
+    background-color: #ffab10;
+}
+
+
+.controllers span {
+    font-size: 40px;
+    color: #777;
+}
+
+.alight {
+    position: relative;
+}
+
+.controllers .prev {
+    position: absolute;
+    top: 50%;
+    left: -10px;
+}
+
+.controllers .next {
+    position: absolute;
+    top: 50%;
+    right: -10px;
+}
+
+.controllers .next i:hover , 
+.controllers .prev i:hover{
+    color: #333;
+}
+
+.chi-tiet {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.chi-tiet input {
+    width: 140px;
+    height: 35px;
+    background-color: #5cb85c;
+    font-size: 15px;
+    color: white;
+    border: 1px solid #4cae4c;
+    border-radius: 5px;
+}
+
+.chi-tiet input:hover {
+    background: #4ba04b;
+}
+
+/*KẾT THÚC CÁC KHÓA HỌC*/
+
+
+
+
+/*BẮT ĐẦU PHẦN TIN TỨC SỰ KIỆN*/
+
+.news {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #77777740;
+    background: linear-gradient(to right, white, #90868617);
+}
+
+.label-news {
+    text-align: left;
+    display: inline-block;
+}
+
+.label-news > p {
+    position: relative;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 10px 30px;
+    margin-top: 10px;
+    background-color: #007abfc9;
+    color: white;
+    text-transform: uppercase;
+}
+
+.label-news > p:before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-color: #007abf;
+    transform: skew(-23deg);
+    -o-transform : skew(-23deg);
+    -moz-transform : skew(-23deg);
+    -webkit-transform : skew(-23deg);
+    -ms-transform : skew(-23deg);
+    top: 0;
+    right: -30px;
+}
+
+.main-news img {
+    max-width: 100%;
+    border: 4px double #44414140;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 1px 6px 13px 0px #8b7b7b75;
+}
+
+.main-news a {
+    font-family: 'Roboto Condensed';
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #337ab7;
+    margin: 25px;
+}
+
+.main-news a:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 13px;
+    background: black;
+    transform: skew(-32deg);
+    -o-transform : skew(-32deg);
+    -moz-transform : skew(-32deg);
+    -webkit-transform : skew(-32deg);
+    -ms-transform : skew(-32deg);
+    top: 3px;
+    left: -21px;
+}
+
+.main-news a:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 13px;
+    background: orange;
+    transform: skew(-32deg);
+    -o-transform : skew(-32deg);
+    -moz-transform : skew(-32deg);
+    -webkit-transform : skew(-32deg);
+    -ms-transform : skew(-32deg);
+    top: 3px;
+    left: -15px;
+}
+
+.main-news p {
+    font-family: 'Roboto Condensed';
+    color: #000000ad;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.main-news input {
+    width: 90px;
+    height: 35px;
+    color: white;
+    background: #2b8afff2;
+    font-size: 15px;
+    border-color: #0a376ffc;
+    border-radius: 5px;
+}
+
+.main-news input:hover {
+    background: #007abf;
+}
+
+
+.child-news .image-news {
+    margin: 0 0 30px;
+}
+
+.child-news .image-news img {
+    max-width: 100%;
+    border: 4px double #44414140;
+    border-radius: 5px;
+    box-shadow: 1px 6px 13px 0px #8b7b7b75;
+}
+
+.child-news .image-news > a {
+    font-family: 'Roboto Condensed';
+    position: relative;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 100;
+    color: #337ab7;
+    margin: 25px;
+}
+
+.child-news .image-news > a:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 13px;
+    background: black;
+    transform: skew(-32deg);
+    -o-transform : skew(-32deg);
+    -moz-transform : skew(-32deg);
+    -webkit-transform : skew(-32deg);
+    -ms-transform : skew(-32deg);
+    top: 3px;
+    left: -21px;
+}
+
+.child-news .image-news > a:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 13px;
+    background: orange;
+    transform: skew(-32deg);
+    -o-transform : skew(-32deg);
+    -moz-transform : skew(-32deg);
+    -webkit-transform : skew(-32deg);
+    -ms-transform : skew(-32deg);
+    top: 3px;
+    left: -15px;
+}
+
+.child-news .image-news p {
+    font-family: 'Roboto Condensed';
+    color: #000000ad;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.clock {
+    text-align: center;
+}
+
+.clock input {
+    font-size: 15px;
+    width: 120px;
+    height: 35px;
+    color: white;
+    background-color: #5cb85c;
+    border: 1px solid #4cae4c;
+    border-radius: 5px;
+
+}
+
+.clock input:hover {
+    background: #4ba04b;
+}
+
+
+/*KẾT THÚC PHẦN TIN TỨC SỰ KIỆN*/
+
+
+/*BẮT ĐẦU PHẦN PHẢN HỒI*/
+
+.label-feedback {
+    text-align: left;
+    display: inline-block;
+}
+
+.label-feedback > p {
+    position: relative;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 10px 30px;
+    margin-top: 10px;
+    background-color: #007abfc9;
+    color: white;
+    text-transform: uppercase;
+}
+
+.label-feedback > p:before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-color: #007abf;
+    transform: skew(-23deg);
+    -o-transform : skew(-23deg);
+    -moz-transform : skew(-23deg);
+    -webkit-transform : skew(-23deg);
+    -ms-transform : skew(-23deg);
+    top: 0;
+    right: -30px;
+}
+
+
+.slider-slick4, .slider-slick6{
+    width: 100%;
+    margin: auto;
+}
+
+.slider-slick4 .item, .slider-slick6 .item {
+    height: 500px;
+    color: #fff;
+    background-color: #f0f0f0;
+}
+.slider-slick5 {
+    width: 100%;
+    margin: auto;
+}
+
+.slider-slick5 .item {
+    text-align: center;
+    height: 145px;
+    color: #fff;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.lien-ket {
+    padding-bottom: 70px;
+    background: linear-gradient(to right, white, #90868617);
+    border: 1px solid #cfcfcf;
+}
+
+.lien-ket h2 {
+    text-align: center;
+    color: black;
+    padding: 30px 0 25px 0;
+    margin: 35px 0;
+    font-size: 45px;
+    font-weight: 100;
+    box-shadow: -2px 3px 12px 5px #3690ff26;
+    cursor: pointer;
+}
+
+.lien-ket > h2 > b {
+    color: #007abf;
+}
+
+
+/*KẾT THÚC PHẦN PHẢN HỒI*/
+
+
+/***********************************************************************************/
+/*																				   */
+/*						////			END  CONTENT		  \\\\	               */
+/*                                                                                 */
+/***********************************************************************************/
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************************/
+/*																				   */
+/*						////			START FOOTER		  \\\\	               */
+/*                                                                                 */
+/***********************************************************************************/
+
+
+
+.content-footer {
+    width: 100%;
+    background-color: #e6dddda1;
+    padding: 30px 0 0;
+}
+
+.logo1 img {
+    max-width: 50%;
+}
+
+.map, .facebook {
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    margin: 30px 0 0;
+    background-color: #298afc;
+}
+
+.copyright p{
+    font-family: 'Roboto Condensed';
+    margin: 0;
+    color: white;
+    padding: 11px 0;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.lh p {
+    font-family: 'Roboto Condensed';
+    margin-top: 20px;
+    font-size: 15px;
+    color: black;
+}
+
+/***********************************************************************************/
+/*																				   */
+/*						////			END FOOTER  		  \\\\	               */
+/*                                                                                 */
+/***********************************************************************************/
+
+
+
+
+/***********************************************************************************/
+/*																				   */
+/*						////			START MAIN-GIOITHIEU  \\\\	               */
+/*                                                                                 */
+/***********************************************************************************/
+
+.main-gioithieu {
+    max-width: 100%;
+}
+
+.main-gioithieu .anh-gioithieu img{
+    width: 100%;
+}
+
+.nav-tabs-menu {
+    margin-top: 10px;
+}
+
+/***********************************************************************************/
+/*																				   */
+/*						////			END MAIN-GIOITHIEU 	\\\\	               */
+/*                                                                                 */
+/***********************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1199px) {
+
+    /* Start Header repon*/
+    .header > div.container > .logo {
+        width: 25%;
+    }
+
+    .header > div.container > .main-menu {
+        width: 75%;
+        padding-left: 0px;
+    }
+
+    /*End Header repon*/
+
+
+    .cung-cap-khoa-hoc p:nth-child(1) {
+        font-size: 19px;
+    }
+
+    /*Slider-intro repon*/
+    .course {
+        padding-top: 35px;
+    }
+
+    /*End Slider-intro repon*/
+
+    /*End Home-intro repon*/
+
+    .home-intro {
+        padding: 30px 0 15px 0;
+    }
+
+    .home-intro h4 img {
+        top: 5px;
+        right: -55px;
+    }
+
+    .home-intro p {
+        line-height: 36px;
+        font-size: 20px;
+    }
+
+    /*End Home-intro repon*/
+
+    /*Start thong-tin anh-dao-tao a*/
+    .thong-tin .anh-daotao a {
+        font-size: 19px;
+    }
+    /*End thong-tin anh-dao-tao*/
+    /*Start thong-tin anh-daotao*/
+    .thong-tin .anh-daotao {
+        line-height: 65px;
+    }
+    /*End thong-tin anh-daotao*/
+
+    /*Start course repon*/
+
+    .li-do div:nth-child(2) {
+        margin-left: 160px;
+    }
+
+    .li-do div p {
+        font-size: 20px;
+    }
+
+    .li-do div:nth-child(1) {
+        padding-top: 0px;
+        margin-left: 225px;
+    }
+
+    .li-do div:nth-child(3) {
+        margin-left: 90px;
+    }
+
+    .li-do div:nth-child(4) {
+        margin-left: 40px;
+    }
+
+    /*End course repon*/
+
+
+    /*Start programming 1*/
+    .programming1 > h1 {
+        font-size: 30px;
+    }
+
+    .programming1 > p {
+        font-size: 20px;
+    }
+
+    /*End programing 1*/
+}
