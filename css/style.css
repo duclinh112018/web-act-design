@@ -931,7 +931,7 @@ div.co-1 {
 
 .slider-slick1,
 .slider-slick2, 
-.slider-slick3  {
+.slider-slick3 {
     width: 100%;
     margin: auto;
 }
@@ -1018,6 +1018,7 @@ div.co-1 {
     padding: 10px 30px;
     margin-top: 10px;
     background-color: #007abfc9;
+    border-left: 15px solid #ea0606;
     color: white;
     text-transform: uppercase;
 }
@@ -1035,6 +1036,16 @@ div.co-1 {
     -ms-transform : skew(-23deg);
     top: 0;
     right: -30px;
+}
+
+.label-news > p:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 48px;
+    background-color: #333;
+    top: 0;
+    left: -40px;
 }
 
 .main-news img {
@@ -1202,6 +1213,7 @@ div.co-1 {
     padding: 10px 30px;
     margin-top: 10px;
     background-color: #007abfc9;
+    border-left: 15px solid #ea0606;
     color: white;
     text-transform: uppercase;
 }
@@ -1219,6 +1231,16 @@ div.co-1 {
     -ms-transform : skew(-23deg);
     top: 0;
     right: -30px;
+}
+
+.label-feedback > p:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 48px;
+    background-color: #333;
+    top: 0;
+    left: -40px;
 }
 
 
@@ -1353,8 +1375,64 @@ div.co-1 {
     width: 100%;
 }
 
+.main-gioithieu .content-gioithieu {
+    background-color: white;
+    margin-top: 40px;
+}
+
+.ct-gt1 > h3{
+    position: relative;
+    padding-left: 30px; 
+    font-size: 52px;
+    font-weight: 900;
+    color: #0088cc;
+}
+
+.ct-gt1 > h3:before {
+    content: "";
+    width: 20px;
+    height: 52px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+
+.ct-gt1 > h3:after {
+    content: "";
+    width: 15px;
+    height: 52px;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
 .nav-tabs-menu {
-    margin-top: 10px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.contents-tabs {
+    margin-top: 30px;
+}
+
+
+.contents-tabs > p {
+    color: #584f4fbf;
+    margin: 0 0 0 146px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contents-tabs table ul {
+    margin-left: 50px;
+}
+
+.tabs-api h3{
+    color: #444444;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
 }
 
 /***********************************************************************************/
