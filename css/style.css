@@ -39,8 +39,8 @@ ul , li {
     min-width: 500px;
 }
 /***********************************************************************************/
-/*																				   */
-/*						////			START HEADER		  \\\\	               */
+/*                                                                                 */
+/*                      ////            START HEADER          \\\\                 */
 /*                                                                                 */
 /***********************************************************************************/
 .header {
@@ -230,7 +230,7 @@ div.icon .ul-icon li {
     position: absolute;
     top: 100%;
     width: 100%;
-    height: 100%;	
+    height: 100%;   
     left: 0;
     transition: .3s;
     z-index: 2;
@@ -382,8 +382,8 @@ div.co-1 {
 /*End Menu-đa cấp*/
 
 /***********************************************************************************/
-/*																				   */
-/*						////			END HEADER		  \\\\	               */
+/*                                                                                 */
+/*                      ////            END HEADER        \\\\                 */
 /*                                                                                 */
 /***********************************************************************************/
 
@@ -408,8 +408,8 @@ div.co-1 {
 
 
 /***********************************************************************************/
-/*																				   */
-/*						////			START CONTENT		  \\\\	               */
+/*                                                                                 */
+/*                      ////            START CONTENT         \\\\                 */
 /*                                                                                 */
 /***********************************************************************************/
 
@@ -944,7 +944,7 @@ div.co-1 {
     color: #fff;
     margin: 0 10px;
     border-radius: 13px;
-    background-color: #ffab10;
+    background-color: white;
 }
 
 
@@ -959,13 +959,13 @@ div.co-1 {
 
 .controllers .prev {
     position: absolute;
-    top: 50%;
+    top: 44%;
     left: -10px;
 }
 
 .controllers .next {
     position: absolute;
-    top: 50%;
+    top: 44%;
     right: -10px;
 }
 
@@ -981,7 +981,7 @@ div.co-1 {
 
 .chi-tiet input {
     width: 140px;
-    height: 35px;
+    height: 40px;
     background-color: #5cb85c;
     font-size: 15px;
     color: white;
@@ -1252,7 +1252,7 @@ div.co-1 {
 .slider-slick4 .item, .slider-slick6 .item {
     height: 500px;
     color: #fff;
-    background-color: #f0f0f0;
+    background-color: white;
 }
 .slider-slick5 {
     width: 100%;
@@ -1265,7 +1265,7 @@ div.co-1 {
     color: #fff;
     margin: 0 10px;
     border-radius: 5px;
-    background-color: #f0f0f0;
+    background-color: #fffbf3;
 }
 
 .lien-ket {
@@ -1294,8 +1294,8 @@ div.co-1 {
 
 
 /***********************************************************************************/
-/*																				   */
-/*						////			END  CONTENT		  \\\\	               */
+/*                                                                                 */
+/*                      ////            END  CONTENT          \\\\                 */
 /*                                                                                 */
 /***********************************************************************************/
 
@@ -1309,8 +1309,8 @@ div.co-1 {
 
 
 /***********************************************************************************/
-/*																				   */
-/*						////			START FOOTER		  \\\\	               */
+/*                                                                                 */
+/*                      ////            START FOOTER          \\\\                 */
 /*                                                                                 */
 /***********************************************************************************/
 
@@ -1353,8 +1353,8 @@ div.co-1 {
 }
 
 /***********************************************************************************/
-/*																				   */
-/*						////			END FOOTER  		  \\\\	               */
+/*                                                                                 */
+/*                      ////            END FOOTER            \\\\                 */
 /*                                                                                 */
 /***********************************************************************************/
 
@@ -1362,11 +1362,12 @@ div.co-1 {
 
 
 /***********************************************************************************/
-/*																				   */
-/*						////			START MAIN-GIOITHIEU  \\\\	               */
+/*                                                                                 */
+/*                      ////            START MAIN-GIOITHIEU  \\\\                 */
 /*                                                                                 */
 /***********************************************************************************/
 
+/* Start content-gioitgieu */
 .main-gioithieu {
     max-width: 100%;
 }
@@ -1378,6 +1379,13 @@ div.co-1 {
 .main-gioithieu .content-gioithieu {
     background-color: white;
     margin-top: 40px;
+}
+
+/* Start Ct-gt1 */
+
+.ct-gt1 {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #8884841c;
 }
 
 .ct-gt1 > h3{
@@ -1407,6 +1415,10 @@ div.co-1 {
     top: 0;
     left: 5px;
 }
+
+.tabs-gt > p {
+    color: #333333d9;
+}
 .nav-tabs-menu {
     padding: 20px;
     margin-top: 40px;
@@ -1418,26 +1430,178 @@ div.co-1 {
 
 
 .contents-tabs > p {
-    color: #584f4fbf;
+    position: relative;
+    color: #0d7571;
     margin: 0 0 0 146px;
     font-size: 20px;
     font-weight: 600;
 }
 
+.contents-tabs > p:before {
+    content: "";
+    width: 5px;
+    height: 20px;
+    position: absolute;
+    background-color: black;
+    transform: skew(-23deg);
+    -o-transform : skew(-23deg);
+    -moz-transform : skew(-23deg);
+    -webkit-transform : skew(-23deg);
+    -ms-transform : skew(-23deg);
+    top: 0;
+    left: -8px;
+
+}
+
+.contents-tabs > p:after {
+    content: "";
+    width: 5px;
+    height: 20px;
+    position: absolute;
+    background-color: orange;
+    transform: skew(-23deg);
+    -o-transform : skew(-23deg);
+    -moz-transform : skew(-23deg);
+    -webkit-transform : skew(-23deg);
+    -ms-transform : skew(-23deg);
+    top: 0;
+    left: -15px;
+}
+
 .contents-tabs table ul {
     margin-left: 50px;
+    color: #333333d9;
+    line-height: 25px;
 }
 
 .tabs-api h3{
+    display: inline-block;
     color: #444444;
     font-size: 30px;
     font-weight: bold;
     margin: 0;
 }
 
+/* Start Ct-gt2 */
+
+.ct-gt2 {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+}
+
+.ct-gt2 h2, .ct-gt3 h2, .ct-gt4 h2 {
+    position: relative;
+    font-weight: 700;
+    margin-bottom: 50px;
+    padding: 20px 0 20px 0;
+    font-family: 'Roboto';
+}
+
+.ct-gt2 h2:after, .ct-gt3 h2:after, .ct-gt4 h2:after {
+    content: "";
+    width: 7%;
+    border: 4px solid #ad1b1f;
+    position: absolute;
+    top: 100%;
+    left: 46%;
+    border-radius: 10px;
+}
+
+.icon-gt {
+    text-align: center;
+}
+
+.icon-gt i {
+    font-size: 80px;
+    color: #ad1b1f;
+}
+
+.title-gt {
+    text-align: center;
+}
+
+.title-gt > p {
+    color: #207b78;
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.comment-gt {
+    text-align: justify;
+}
+
+.comment-gt > p {
+    color: #3333339e;
+}
+
+.see-more {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+.see-more a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #1f716e;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.see-more a:hover {
+    color: white;
+    background-color: #135250;
+}
+
+.slider-slick7 {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* Slick slider 7 Update */
+.slider-slick7 .item {
+    text-align: center;
+    height: 400px;
+    color: #fff;
+    margin: 0 10px;
+    border-radius: 8px;
+    background-color: #fffbf3;
+}
+
+.controllers .prev1 {
+    position: absolute;
+    top: 37%;
+    left: -10px;
+}
+
+.controllers .next1 {
+    position: absolute;
+    top: 37%;
+    right: -10px;
+}
+
+.controllers .next1 i:hover , 
+.controllers .prev1 i:hover{
+    color: #333;
+}
+
+/* End Slick-Slider7 Update */
+.ct-gt4 {
+    background-color: #333;
+    padding-bottom: 50px;
+}
+
+.ct-gt4 h2 {
+    color: white !important; 
+}
+
+
 /***********************************************************************************/
-/*																				   */
-/*						////			END MAIN-GIOITHIEU 	\\\\	               */
+/*                                                                                 */
+/*                      ////            END MAIN-GIOITHIEU  \\\\                   */
 /*                                                                                 */
 /***********************************************************************************/
 
